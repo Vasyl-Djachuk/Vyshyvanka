@@ -9,10 +9,6 @@ p {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -32,4 +28,37 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+body {
+  background-color: #1c221c;
+  font-family: 'Manrope', sans-serif;
+  color: rgba(252, 249, 249, 0.4);
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

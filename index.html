@@ -2,14 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Vyshyvanka/favicon.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>111111111</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <script type="module" crossorigin src="/Vyshyvanka/commonHelpers.js"></script>
     <link rel="stylesheet" href="/Vyshyvanka/assets/index-90a3c9e1.css">
   </head>
-  <body>
+  <body class="body">
     <header class="page-header">
   <div class="container header-container">
     <nav class="header-nav">
@@ -117,15 +127,151 @@
   </div>
 </header>
 
+    <main>
+      <section class="hero-section">
+  <div class="container">
+    <div class="wrapper-title">
+      <h1 class="hero-title">
+        Reviving the traditional<span class="hero-title-span"> Ukrainian</span>
+        artistry in every stitch.
+      </h1>
+      <button class="hero-button" type="button">
+        Order
+        <svg class="hero-btn-svg" width="26" height="16">
+          <use href="/Vyshyvanka/assets/sprite-b5514ac7.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="img-wrapper">
+      <img
+        class="hero-img"
+        src="/Vyshyvanka/assets/mobile-hero-girl-d9150637.jpg"
+        alt="Girl with vyshyvanka"
+      />
+    </div>
+  </div>
+</section>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+      <section class="about-us-section" id="about-us-section-link">
+  <div class="container about-us-container">
+    <div class="about-text-wraper">
+      <h2 class="about-us-title">About Us</h2>
+      <p class="about-us-text">
+        The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
+        vyshyvanka comes to life with new zest and style. Our store offers a
+        wide selection of high-quality and authentic embroidery, which combines
+        the elegance of traditional needlework and modern design.
+      </p>
+      <p class="about-us-text-second">
+        In "Vyshyvanka Vibes" you will find various models of embroidery, from
+        classic to modern, corresponding to the latest fashion trends. Our
+        embroidery is made using natural fabrics and is embroidered by highly
+        qualified craftsmen who convey the beauty of Ukrainian culture in every
+        detail.We believe that vyshyvanka is not just clothing, but a symbol of
+        national pride, the heritage of our ancestors and a way of expressing
+        one's individuality. Each embroidery from "Vyshyvanka Vibes" has its own
+        unique history and symbolism, which gives it a special meaning.
+      </p>
+    </div>
+    <picture class="about-us-picture">
+      <source
+        media="(min-width: 1280px)"
+        srcset="/Vyshyvanka/assets/compuctor-about-us-vyshyvanka-bbb63b6c.jpg 1x, /Vyshyvanka/assets/compuctor-about-us-vyshyvanka@2x-94821fb8.jpg 2x"
+        type="image/jpg"
+        width="594"
+        height="545"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/Vyshyvanka/assets/planshet-about-us-girl-39ce971e.jpg 1x, /Vyshyvanka/assets/planshet-about-us-girl@2x-a4722ee5.jpg 2x"
+        type="image/jpg"
+        width="704"
+        height="545"
+      />
+      <img
+        class="about-us-photo"
+        srcset="/Vyshyvanka/assets/mobile-about-us-girl-92ef485e.jpg 1x, /Vyshyvanka/assets/mobile-about-us-girl@2x-bb8224c8.jpg 2x"
+        src="/Vyshyvanka/assets/mobile-about-us-girl-92ef485e.jpg"
+        alt="traditional blouse"
+        width="335"
+        height="499"
+      />
+    </picture>
+    <div class="about-us-background-png"></div>
+  </div>
+</section>
 
-    <!-- Loads the specified .html file -->
-    ENOENT: no such file or directory, open '/home/runner/work/Vyshyvanka/Vyshyvanka/src/partials/vite-promo.html'
+      
+      <section class="your-order" id="your-order-section">
+  <div class="order-background-img"></div>
+  <div class="container order-container">
+    <div class="order-background-png"></div>
+    <div>
+      <h2 class="order-title">
+        <span class="order-title-span">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="order-form-container">
+        <label class="order-form-label" for="user-name">
+          <input
+            class="order-form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Enter your full name"
+            pattern="[a-z,A-Z, ]+"
+            required
+        /></label>
+        <label class="order-form-label" for="user-phone">
+          <input
+            class="order-form-input"
+            placeholder="Enter your email"
+            type="email"
+            name="phone"
+            id="user-phone"
+            pattern=""
+            required
+        /></label>
+        <label class="order-form-textlabel" for="user-comment">
+          <textarea
+            class="order-form-text-comment"
+            name="user-comment"
+            rows="5"
+            placeholder="Comments"
+            id="user-comment"
+          ></textarea>
+        </label>
+        <button class="order-button" type="submit">
+          Send
+          <svg class="order-buton-svg" width="26" height="16">
+            <use href="/Vyshyvanka/assets/sprite-b5514ac7.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <picture class="order-picture">
+      <source
+        media="(min-width: 1280px)"
+        srcset="/Vyshyvanka/assets/compuctor-your-order-vyshyvanka-641bb86d.jpg 1x, /Vyshyvanka/assets/compuctor-your-order-vyshyvanka@2x-d6c4672e.jpg 2x"
+        type="image/jpg"
+        width="524"
+        height="521"
+      />
+      <img
+        class="order-photo"
+        srcset="/Vyshyvanka/assets/planshet-your-order-vyshyvanka-53618228.jpg 1x, /Vyshyvanka/assets/planshet-your-order-vyshyvanka@2x-fac9c9a6.jpg 2x"
+        src="/Vyshyvanka/assets/planshet-your-order-vyshyvanka-53618228.jpg"
+        alt="traditional blouse"
+        width="638"
+        height="521"
+      />
+    </picture>
+  </div>
+</section>
+
+      
+    </main>
+    
 
     
   </body>

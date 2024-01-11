@@ -90,4 +90,37 @@
   .about-us-text-second {
     margin-bottom: 0;
   }
+  .about-us-background-png {
+    background-image: url(../img/desktop-about-background.png);
+    bottom: 0;
+    right: 0;
+    width: 385px;
+    height: 484px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ration: 2) {
+    .about-us-background-png {
+      background-image: url(../img/desktop-about-background@2x.png);
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-us-background-png {
+    background-image: url(../img/desktop-max-about-background.png);
+    width: 545px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ration: 2) {
+    .about-us-background-png {
+      background-image: url(../img/desktop-max-about-background@2x.png);
+    }
+  }
+  .about-us-text {
+    max-width: 481px;
+  }
+  .about-us-text-second {
+    max-width: 481px;
+  }
 }

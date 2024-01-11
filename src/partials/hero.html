@@ -1,5 +1,5 @@
 <section class="hero-section">
-  <div class="container">
+  <div class="container hero-container">
     <div class="wrapper-title">
       <h1 class="hero-title">
         Reviving the traditional<span class="hero-title-span"> Ukrainian</span>
@@ -12,12 +12,73 @@
         </svg>
       </button>
     </div>
-    <div class="img-wrapper">
-      <img
-        class="hero-img"
-        src="./img/mobile-hero-girl.jpg"
-        alt="Girl with vyshyvanka"
-      />
+    <div class="hero-img-wrapper">
+      <picture class="hero-picture">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/compuctor-hero-girl.jpg    1x,
+            ./img/compuctor-hero-girl@2x.jpg 2x
+          "
+          type="image/jpg"
+          width="392"
+          height="545"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/planshet-hero-girl.jpg    1x,
+            ./img/planshet-hero-girl@2x.jpg 2x
+          "
+          type="image/jpg"
+          width="413"
+          height="575"
+        />
+        <img
+          class="hero-main-photo"
+          srcset="
+            ./img/mobile-hero-girl.jpg    1x,
+            ./img/mobile-hero-girl@2x.jpg 2x
+          "
+          src="./img/mobile-hero-girl.jpg"
+          alt="traditional blouse"
+          width="335"
+          height="545"
+        />
+      </picture>
     </div>
+    <div class="hero-wrapper-sun">
+      <svg class="hero-sun-svg" width="52" height="51">
+        <use href="./img/sprite.svg#icon-Star"></use>
+      </svg>
+      <p class="hero-sun-svg-text">all embroidery is made by hand</p>
+    </div>
+    <picture class="hero-ellipse-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/desktop-max-ellipse.png    1x,
+          ./img/desktop-max-ellipse@2x.png 2x
+        "
+        type="image/jpg"
+        width="139"
+        height="171"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="./img/desktop-ellipse.png 1x, ./img/desktop-ellipse@2x.png 2x"
+        type="image/jpg"
+        width="142"
+        height="157"
+      />
+      <img
+        class="hero-ellipse-img"
+        srcset="./img/tablet-ellipse.png 1x, ./img/tablet-ellipse@2x.png 2x"
+        src="./img/tablet-ellipse.png"
+        alt="traditional image"
+        width="157"
+        height="191"
+      />
+    </picture>
   </div>
 </section>

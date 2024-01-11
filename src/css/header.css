@@ -101,12 +101,13 @@
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
   background-color: rgba(252, 249, 249, 0.1);
-  transition: border 250ms linear;
+  transition: border 250ms linear, background-color 250ms linear;
 }
 .hr-social-list-link:hover,
 .hr-social-list-link:focus {
   border: 1px solid #ecd979;
   outline: transparent;
+  background-color: transparent;
 }
 .hr-social-list-icon use {
   fill: #fcf9f9;
@@ -120,7 +121,7 @@
     height: 30px;
   }
   .header-container {
-    padding-bottom: 34px;
+    padding-bottom: 56px;
   }
   .header-menu-open-btn {
     margin-left: 20px;

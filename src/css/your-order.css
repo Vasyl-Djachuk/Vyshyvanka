@@ -267,3 +267,37 @@
     }
   }
 }
+@media screen and (min-width: 1440px) {
+  .order-background-img {
+    background-image: url(../img/desktop-max-order-girl.jpg);
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ration: 2) {
+    .order-background-img {
+      background-image: url(../img/desktop-max-order-girl@2x.png);
+    }
+  }
+  .order-background-png {
+    width: 362px;
+    height: 484px;
+    background-image: url(../img/desktop-max-order-background.png);
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ration: 2) {
+    .order-background-png {
+      background-image: url(../img/desktop-max-order-background@2x.png);
+    }
+  }
+  .order-container {
+    justify-content: start;
+    padding-left: 100px;
+  }
+  .order-title {
+    max-width: 666px;
+  }
+}

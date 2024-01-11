@@ -1,0 +1,111 @@
+.footer-section {
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: #1c2225;
+}
+.footer-container {
+  padding-top: 40px;
+  padding-bottom: 292px;
+  background-image: url(../img/mobile-footer-background.png);
+  background-position: bottom 0 left 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ration: 2) {
+  .footer-container {
+    background-image: url(../img/mobile-footer-background@2x.png);
+  }
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 40px;
+  max-height: 64px;
+  margin-bottom: 40px;
+}
+.footer-nav-link {
+  color: #fcf9f9;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  transition: color 250ms linear;
+}
+.footer-nav-link:focus,
+.footer-nav-link:hover {
+  color: #ecd979;
+}
+.footer-title {
+  color: #fcf9f9;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
+}
+.footer-title-span {
+  color: #ecd979;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding-bottom: 40px;
+    background-image: url(../img/planshet-footer-background.png);
+    background-position: top 0 right 0;
+    background-repeat: no-repeat;
+    background-size: 174px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ration: 2) {
+    .footer-container {
+      background-image: url(../img/planshet-footer-background@2x.png);
+    }
+  }
+  .footer-list {
+    column-gap: 25px;
+    flex-direction: row;
+    margin-bottom: 80px;
+  }
+  .footer-title {
+    max-width: 521px;
+    font-size: 54px;
+    line-height: 1.19;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-title {
+    font-size: 64px;
+    line-height: 1.16;
+    max-width: 754px;
+  }
+  .footer-container {
+    background-image: url(../img/compuctor-footer-background.jpg);
+    background-position: top 0 right 0;
+    background-repeat: no-repeat;
+    background-size: 336px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ration: 2) {
+    .footer-container {
+      background-image: url(../img/compuctor-footer-background@2x.jpg);
+    }
+  }
+  .footer-list {
+    margin-bottom: 117px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    background-image: url(../img/desktop-max-footer-background.png);
+    background-size: 496px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ration: 2) {
+    .footer-container {
+      background-image: url(../img/desktop-max-footer-background@2x.png);
+    }
+  }
+}

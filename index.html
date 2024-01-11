@@ -17,7 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/Vyshyvanka/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Vyshyvanka/assets/index-90a3c9e1.css">
+    <link rel="stylesheet" href="/Vyshyvanka/assets/index-caffd7d8.css">
   </head>
   <body class="body">
     <header class="page-header">
@@ -129,7 +129,7 @@
 
     <main>
       <section class="hero-section">
-  <div class="container">
+  <div class="container hero-container">
     <div class="wrapper-title">
       <h1 class="hero-title">
         Reviving the traditional<span class="hero-title-span"> Ukrainian</span>
@@ -142,13 +142,62 @@
         </svg>
       </button>
     </div>
-    <div class="img-wrapper">
-      <img
-        class="hero-img"
-        src="/Vyshyvanka/assets/mobile-hero-girl-d9150637.jpg"
-        alt="Girl with vyshyvanka"
-      />
+    <div class="hero-img-wrapper">
+      <picture class="hero-picture">
+        <source
+          media="(min-width: 1280px)"
+          srcset="/Vyshyvanka/assets/compuctor-hero-girl-7ce4203c.jpg 1x, /Vyshyvanka/assets/compuctor-hero-girl@2x-ded38891.jpg 2x"
+          type="image/jpg"
+          width="392"
+          height="545"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/Vyshyvanka/assets/planshet-hero-girl-7eb5231a.jpg 1x, /Vyshyvanka/assets/planshet-hero-girl@2x-e6366280.jpg 2x"
+          type="image/jpg"
+          width="413"
+          height="575"
+        />
+        <img
+          class="hero-main-photo"
+          srcset="/Vyshyvanka/assets/mobile-hero-girl-d9150637.jpg 1x, /Vyshyvanka/assets/mobile-hero-girl@2x-1ec7e12d.jpg 2x"
+          src="/Vyshyvanka/assets/mobile-hero-girl-d9150637.jpg"
+          alt="traditional blouse"
+          width="335"
+          height="545"
+        />
+      </picture>
     </div>
+    <div class="hero-wrapper-sun">
+      <svg class="hero-sun-svg" width="52" height="51">
+        <use href="/Vyshyvanka/assets/sprite-b5514ac7.svg#icon-Star"></use>
+      </svg>
+      <p class="hero-sun-svg-text">all embroidery is made by hand</p>
+    </div>
+    <picture class="hero-ellipse-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="/Vyshyvanka/assets/desktop-max-ellipse-5680abe2.png 1x, /Vyshyvanka/assets/desktop-max-ellipse@2x-a9941cf3.png 2x"
+        type="image/jpg"
+        width="139"
+        height="171"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="/Vyshyvanka/assets/desktop-ellipse-a0add75f.png 1x, /Vyshyvanka/assets/desktop-ellipse@2x-0c77d586.png 2x"
+        type="image/jpg"
+        width="142"
+        height="157"
+      />
+      <img
+        class="hero-ellipse-img"
+        srcset="/Vyshyvanka/assets/tablet-ellipse-a920ac2d.png 1x, /Vyshyvanka/assets/tablet-ellipse@2x-fa6b54ec.png 2x"
+        src="/Vyshyvanka/assets/tablet-ellipse-a920ac2d.png"
+        alt="traditional image"
+        width="157"
+        height="191"
+      />
+    </picture>
   </div>
 </section>
 
@@ -174,6 +223,13 @@
       </p>
     </div>
     <picture class="about-us-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="/Vyshyvanka/assets/desktop-max-about-girl-89baf628.png 1x, /Vyshyvanka/assets/desktop-max-about-girl@2x-94b9ce50.png 2x"
+        type="image/jpg"
+        width="709"
+        height="545"
+      />
       <source
         media="(min-width: 1280px)"
         srcset="/Vyshyvanka/assets/compuctor-about-us-vyshyvanka-bbb63b6c.jpg 1x, /Vyshyvanka/assets/compuctor-about-us-vyshyvanka@2x-94821fb8.jpg 2x"
@@ -201,7 +257,202 @@
   </div>
 </section>
 
-      
+      <section class="collection-section">
+  <div class="container">
+    <h2 class="collection-title">Our collection</h2>
+    <ul class="collection-list">
+      <li class="collection-item">
+        <picture class="colection-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/Vyshyvanka/assets/desktop-max-colection1-23fc4c1f.jpg 1x, /Vyshyvanka/assets/desktop-max-colection1@2x-9b564abf.jpg 2x"
+            type="image/jpg"
+            width="400"
+            height="430" />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Vyshyvanka/assets/compuctor-our-collection-vyshyvanka1-ae2e6145.jpg 1x, /Vyshyvanka/assets/compuctor-our-collection-vyshyvanka1@2x-63f14492.jpg 2x"
+            type="image/jpg"
+            width="347"
+            height="430" />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Vyshyvanka/assets/planshet-our-collection-vyshyvanka1-d7640d5f.jpg 1x, /Vyshyvanka/assets/planshet-our-collection-vyshyvanka1@2x-306edc40.jpg 2x"
+            type="image/jpg"
+            width="342"
+            height="430" />
+          <img
+            class="about-us-photo"
+            srcset="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka1-52634ae2.jpg 1x, /Vyshyvanka/assets/mobile-our-collection-vyshyvanka1@2x-93a79c0e.jpg 2x"
+            src="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka1-52634ae2.jpg"
+            alt="traditional blouse"
+            width="335"
+            height="430"
+        /></picture>
+        <p class="collection-item-description">
+          AUGUST Poltava women's blouseRING
+        </p>
+        <p class="collection-item-price">3300 UAH</p>
+      </li>
+      <li class="collection-item">
+        <picture class="colection-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/Vyshyvanka/assets/desktop-max-colection2-7e867b22.jpg 1x, /Vyshyvanka/assets/desktop-max-colection2@2x-d8dcf49f.jpg 2x"
+            type="image/jpg"
+            width="400"
+            height="430" />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Vyshyvanka/assets/compuctor-our-collection-vyshyvanka2-4a13c0eb.jpg 1x, /Vyshyvanka/assets/compuctor-our-collection-vyshyvanka2@2x-d29efac7.jpg 2x"
+            type="image/jpg"
+            width="347"
+            height="430" />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Vyshyvanka/assets/planshet-our-collection-vyshyvanka2-39e94daa.jpg 1x, /Vyshyvanka/assets/planshet-our-collection-vyshyvanka2@2x-e0a01e2a.jpg 2x"
+            type="image/jpg"
+            width="342"
+            height="430" />
+          <img
+            class="about-us-photo"
+            srcset="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka2-16b7f9bb.jpg 1x, /Vyshyvanka/assets/mobile-our-collection-vyshyvanka2@2x-9da6155b.jpg 2x"
+            src="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka2-16b7f9bb.jpg"
+            alt="traditional blouse"
+            width="335"
+            height="430"
+        /></picture>
+        <p class="collection-item-description">Women's blouse Gorgany</p>
+        <p class="collection-item-price">3350 UAH</p>
+      </li>
+      <li class="collection-item">
+        <picture class="colection-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/Vyshyvanka/assets/desktop-max-colection3-df12585c.jpg 1x, /Vyshyvanka/assets/desktop-max-colection3@2x-eb7018b2.jpg 2x"
+            type="image/jpg"
+            width="400"
+            height="430" />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Vyshyvanka/assets/compuctor-our-collection-vyshyvanka3-33232254.jpg 1x, /Vyshyvanka/assets/compuctor-our-collection-vyshyvanka3@2x-105b1fab.jpg 2x"
+            type="image/jpg"
+            width="347"
+            height="430" />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Vyshyvanka/assets/planshet-our-collection-vyshyvanka3-b2bfb325.jpg 1x, /Vyshyvanka/assets/planshet-our-collection-vyshyvanka3@2x-e08c6544.jpg 2x"
+            type="image/jpg"
+            width="342"
+            height="430" />
+          <img
+            class="about-us-photo"
+            srcset="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka3-1693be61.jpg 1x, /Vyshyvanka/assets/mobile-our-collection-vyshyvanka3@2x-a6c06738.jpg 2x"
+            src="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka3-1693be61.jpg"
+            alt="traditional blouse"
+            width="335"
+            height="430"
+        /></picture>
+        <p class="collection-item-description">Women's blouse Crimea</p>
+        <p class="collection-item-price">4000 UAH</p>
+      </li>
+      <li class="collection-item">
+        <picture class="colection-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/Vyshyvanka/assets/desktop-max-colection4-a3ec0341.jpg 1x, /Vyshyvanka/assets/desktop-max-colection4@2x-acc6ea58.jpg 2x"
+            type="image/jpg"
+            width="400"
+            height="430" />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Vyshyvanka/assets/compuctor-our-collection-vyshyvanka4-27c99a9d.jpg 1x, /Vyshyvanka/assets/compuctor-our-collection-vyshyvanka4@2x-46be0032.jpg 2x"
+            type="image/jpg"
+            width="347"
+            height="430" />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Vyshyvanka/assets/planshet-our-collection-vyshyvanka4-947b9f2e.jpg 1x, /Vyshyvanka/assets/planshet-our-collection-vyshyvanka4@2x-3e6a1fcf.jpg 2x"
+            type="image/jpg"
+            width="342"
+            height="430" />
+          <img
+            class="about-us-photo"
+            srcset="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka4-7175958a.jpg 1x, /Vyshyvanka/assets/mobile-our-collection-vyshyvanka4@2x-0a8d41f9.jpg 2x"
+            src="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka4-7175958a.jpg"
+            alt="traditional blouse"
+            width="335"
+            height="430"
+        /></picture>
+        <p class="collection-item-description">Men's shirt Verkhovina</p>
+        <p class="collection-item-price">3100 UAH</p>
+      </li>
+      <li class="collection-item">
+        <picture class="colection-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/Vyshyvanka/assets/desktop-max-colection5-3831bb58.jpg 1x, /Vyshyvanka/assets/desktop-max-colection5@2x-119f51aa.jpg 2x"
+            type="image/jpg"
+            width="400"
+            height="430" />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Vyshyvanka/assets/compuctor-our-collection-vyshyvanka5-d29fb2a2.jpg 1x, /Vyshyvanka/assets/compuctor-our-collection-vyshyvanka5@2x-e9c3c8a8.jpg 2x"
+            type="image/jpg"
+            width="347"
+            height="430" />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Vyshyvanka/assets/planshet-our-collection-vyshyvanka5-d234047b.jpg 1x, /Vyshyvanka/assets/planshet-our-collection-vyshyvanka5@2x-0cd0c884.jpg 2x"
+            type="image/jpg"
+            width="342"
+            height="430" />
+          <img
+            class="about-us-photo"
+            srcset="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka5-b0dbbaba.jpg 1x, /Vyshyvanka/assets/mobile-our-collection-vyshyvanka5@2x-5fbdbc25.jpg 2x"
+            src="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka5-b0dbbaba.jpg"
+            alt="traditional blouse"
+            width="335"
+            height="430"
+        /></picture>
+        <p class="collection-item-description">Mountain men's shirt</p>
+        <p class="collection-item-price">3300 UAH</p>
+      </li>
+      <li class="collection-item">
+        <picture class="colection-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/Vyshyvanka/assets/desktop-max-colection6-4ff8d34e.jpg 1x, /Vyshyvanka/assets/desktop-max-colection6@2x-4abf23ef.jpg 2x"
+            type="image/jpg"
+            width="400"
+            height="430" />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Vyshyvanka/assets/compuctor-our-collection-vyshyvanka6-189b4d2e.jpg 1x, /Vyshyvanka/assets/compuctor-our-collection-vyshyvanka6@2x-c31a4164.jpg 2x"
+            type="image/jpg"
+            width="347"
+            height="430" />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Vyshyvanka/assets/planshet-our-collection-vyshyvanka6-e98a88c7.jpg 1x, /Vyshyvanka/assets/planshet-our-collection-vyshyvanka6@2x-15aa48d1.jpg 2x"
+            type="image/jpg"
+            width="342"
+            height="430" />
+          <img
+            class="about-us-photo"
+            srcset="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka6-f3073f7b.jpg 1x, /Vyshyvanka/assets/mobile-our-collection-vyshyvanka6@2x-2d9f8d6d.jpg 2x"
+            src="/Vyshyvanka/assets/mobile-our-collection-vyshyvanka6-f3073f7b.jpg"
+            alt="traditional blouse"
+            width="335"
+            height="430"
+        /></picture>
+        <p class="collection-item-description">Men's shirt Yasen</p>
+        <p class="collection-item-price">1700 UAH</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
       <section class="your-order" id="your-order-section">
   <div class="order-background-img"></div>
   <div class="container order-container">

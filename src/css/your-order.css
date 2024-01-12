@@ -257,13 +257,13 @@
     height: 484px;
     bottom: 75px;
     left: 0;
-    background-image: url(../img/compuctor-your-order-background.jpg);
+    background-image: url(../img/desktop-order-backdround.png);
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ration: 2) {
     .order-background-png {
-      background-image: url(../img/compuctor-your-order-background@2x.jpg);
+      background-image: url(../img/desktop-order-backdround@2x.png);
     }
   }
 }

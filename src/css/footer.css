@@ -80,7 +80,7 @@
     max-width: 754px;
   }
   .footer-container {
-    background-image: url(../img/compuctor-footer-background.jpg);
+    background-image: url(../img/compuctor-footer-background.png);
     background-position: top 0 right 0;
     background-repeat: no-repeat;
     background-size: 336px;
@@ -89,7 +89,7 @@
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ration: 2) {
     .footer-container {
-      background-image: url(../img/compuctor-footer-background@2x.jpg);
+      background-image: url(../img/compuctor-footer-background@2x.png);
     }
   }
   .footer-list {

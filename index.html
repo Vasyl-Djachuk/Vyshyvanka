@@ -35,7 +35,7 @@
           >
         </li>
         <li class="heder-menu-item">
-          <a class="hr-menu-item-link" href="#your-order-id">customer order</a>
+          <a class="hr-menu-item-link" href="#you-order-id">customer order</a>
         </li>
         <li class="heder-menu-item">
           <a class="hr-menu-item-link" href="#testimonials-section-id"
@@ -97,8 +97,8 @@
   <div class="mobile-menu">
     <div class="mobile-container">
       <button class="mobile-close-button" type="button" aria-label="menu">
-        <svg class="mobile-close-icon" width="36" height="36">
-          <use href="/Vyshyvanka/assets/sprite-13b42b6a.svg#icon-close-buton"></use>
+        <svg class="mobile-close-icon js-close" width="36" height="36">
+          <use class="js-close" href="/Vyshyvanka/assets/sprite-13b42b6a.svg#icon-close-buton"></use>
         </svg>
       </button>
       <a class="mobile-phone-link" href="tel:+380684439426"
@@ -106,18 +106,20 @@
       >
       <ul class="mobile-list">
         <li class="mobile-list-item">
-          <a href="#about-us-id" class="mobile-list-link first-js">About us</a>
+          <a href="#about-us-id" class="mobile-list-link js-close">About us</a>
         </li>
         <li class="mobile-list-item">
-          <a href="#our-collection-id" class="mobile-list-link mobile-colection"
+          <a href="#our-collection-id" class="mobile-list-link js-close"
             >Our collection
           </a>
         </li>
         <li class="mobile-list-item">
-          <a href="#your-order-id" class="mobile-list-link">CUSTOMER ORDER</a>
+          <a href="#you-order-id" class="mobile-list-link js-close"
+            >CUSTOMER ORDER</a
+          >
         </li>
         <li class="mobile-list-item">
-          <a href="#testimonials-section-id" class="mobile-list-link"
+          <a href="#testimonials-section-id" class="mobile-list-link js-close"
             >TEstimonials</a
           >
         </li>
@@ -180,7 +182,7 @@
         srcset="/Vyshyvanka/assets/desktop-max-ellipse-3035db6d.png 1x, /Vyshyvanka/assets/desktop-max-ellipse@2x-abc8688f.png 2x"
         type="image/jpg"
         width="139"
-        height="197"
+        height="171"
       />
       <source
         media="(min-width: 1280px)"
@@ -453,12 +455,12 @@
   </div>
 </section>
 
-      <section class="your-order">
+      <section class="your-order" id="you-order-id">
   <div class="order-background-img"></div>
   <div class="container order-container">
     <div class="order-background-png"></div>
     <div>
-      <h2 class="order-title" id="your-order-id">
+      <h2 class="order-title">
         <span class="order-title-span">Your order</span> is our priority:
         Personalized approach and quality of service
       </h2>
@@ -591,7 +593,7 @@
         <a href="#our-collection-id" class="footer-nav-link">Our collection </a>
       </li>
       <li class="footer-item">
-        <a href="#your-order-id" class="footer-nav-link">CUSTOMER ORDER</a>
+        <a href="#you-order-id" class="footer-nav-link">CUSTOMER ORDER</a>
       </li>
       <li class="footer-item">
         <a href="#testimonials-section-id" class="footer-nav-link"

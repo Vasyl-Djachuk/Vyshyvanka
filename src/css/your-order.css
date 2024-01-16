@@ -52,13 +52,16 @@
   letter-spacing: -0.02em;
   color: #fcf9f9;
   font-size: 16px;
-  transition: border 250ms linear;
+  transition: border 250ms linear, box-shadow 250ms linear;
 }
 .order-form-input::placeholder {
   color: rgba(252, 249, 249, 0.5);
   font-family: Manrope;
   font-size: 14px;
   letter-spacing: -0.02em;
+}
+.input-error {
+  border: 1px solid rgba(250, 18, 103, 1);
 }
 .order-form-label {
   margin-bottom: 20px;

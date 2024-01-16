@@ -12,26 +12,32 @@
           <input
             class="order-form-input"
             type="text"
-            name="user-name"
+            name="name"
             id="user-name"
-            placeholder="Enter your full name"
-            pattern="[a-z,A-Z, ]+"
-            required
+            placeholder="Enter your full name*"
+            pattern="[a-z,A-Z,А-Я,а-я,ЙйІіЯяЇї ]+"
         /></label>
         <label class="order-form-label" for="user-phone">
           <input
             class="order-form-input"
-            placeholder="Enter your email"
-            type="email"
+            type="tel"
             name="phone"
             id="user-phone"
-            pattern=""
+            placeholder="Enter your phone*"
+        /></label>
+        <label class="order-form-label" for="user-email">
+          <input
+            class="order-form-input"
+            placeholder="Enter your email"
+            type="email"
+            name="email"
+            id="user-email"
             required
         /></label>
         <label class="order-form-textlabel" for="user-comment">
           <textarea
             class="order-form-text-comment"
-            name="user-comment"
+            name="comment"
             rows="5"
             placeholder="Comments"
             id="user-comment"

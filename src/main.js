@@ -1,47 +1,44 @@
 import { slowScroll } from './js/slow-scroll';
-
+import { burgerMenuOpenClose } from './js/mod';
+import {
+  validateTelNumber,
+  formText,
+  deleteNumber,
+  formSubmit,
+} from './js/form.js';
 let burgerMenu = document.querySelector(`.header-menu-open-btn`);
-
 burgerMenu.addEventListener(`click`, burgerMenuOpenClose);
 
-function burgerMenuOpenClose(eve) {
-  eve.stopPropagation();
-  let mobileMenu = document.querySelector(`.mobile-menu`);
-  if (mobileMenu.classList.contains(`is-open`)) {
-    mobileMenu.classList.remove(`is-open`);
-    return;
-  }
-  mobileMenu.classList.add(`is-open`);
-  mobileMenu.addEventListener(`click`, checkKlick);
+let orderButton = document.querySelector(`.hero-button`);
+orderButton.addEventListener(`click`, e => {
+  document.querySelector(`.order-title`).scrollIntoView({ behavior: 'smooth' });
+});
 
-  let checkClickBody = document.body;
-  checkClickBody.addEventListener(`click`, checkKlick);
+// save form data to local-storage-----------------------------
+const form = document.querySelector(`.order-form-container`);
 
-  function checkKlick(e) {
-    console.log(e.currentTarget.nodeName);
-    e.stopPropagation();
-    if (e.currentTarget.nodeName === `BODY`) closeMenu();
-    if (e.target.classList.contains(`js-close`)) closeMenu();
-
-    function closeMenu() {
-      mobileMenu.classList.remove(`is-open`);
-      mobileMenu.removeEventListener(`click`, checkKlick);
-      checkClickBody.removeEventListener(`click`, checkKlick);
-    }
-  }
-  //
-
-  //
-  //   let closeButtonX = document.querySelector(`.mobile-close-button`);
-  //   closeButtonX.addEventListener(`click`, closeMobileMenu);
-
-  //   mobileMenu.addEventListener(`click`, e => {
-  //     if (e.target.nodeName === `A`) closeMobileMenu();
-  //   });
+let formMassege = JSON.parse(localStorage.getItem(`form-state`)) ?? {
+  name: ``,
+  phone: ``,
+  comment: ``,
+  email: ``,
+};
+for (const key in formMassege) {
+  form.elements[key].value = formMassege[key];
 }
-//
+
+form.addEventListener(`input`, formText);
+
+// phone number validation ====================================
+const telInput = document.querySelector(`input[type="tel"]`);
+telInput.addEventListener(`input`, validateTelNumber);
+telInput.addEventListener(`keydown`, deleteNumber);
+
+// submit form===================
+form.addEventListener(`submit`, formSubmit);
 
 // slow scroll for id
+
 let links = document.querySelectorAll("a[href^='#']");
 for (let link of links) {
   link.addEventListener('click', function (e) {
@@ -50,3 +47,4 @@ for (let link of links) {
     slowScroll(target);
   });
 }
+// =============================
